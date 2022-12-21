@@ -1,0 +1,10 @@
+/* Tablet */
+
+@media (min-width: 501px) and (max-width: 768px) {
+}
+/* pc */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* Widescreen */
+@media (min-width: 1200px) {
+}

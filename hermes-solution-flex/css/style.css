@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  /*tüm bodynin rengini root a belirlediğimiz 
+  bir rengi atadık. sonrasında değiştirmek 
+  istediğimizde global rengi değiştireceğiz  */
+  background: var(--light-color);
+  /*tüm sayfanın yazı rengi  */
+  color: var(--dark-color);
+  /* satır aralığı veriyoruz */
+  line-height: 1.6;
+}
+
+a {
+  /* defaultta lacivert gibi bir renk vardı bunları rootta belirlediğimiz rengi verdik */
+  color: var(--dark-color);
+}
+h1,
+h2 {
+  font-weight: 400;
+  /* satır aralığı kullanımda standartları aşağı yukarı bu şekilde */
+  line-height: 1.2;
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+/* NAVBAR */
+.navbar {
+  display: flex;
+  /* cross-axis de ortaladık  Hermes Solution yazısı ortalandı*/
+  align-items: center;
+  /*  birini bir uca diğerini bir uca gönderdik*/
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  /* resim ekleyeceğimiz için opacity verdik */
+  opacity: 0.8;
+  /* tepede duruyor */
+  width: 100%;
+  /* genelde navbarların yüksekliği 70px oluyormuş */
+  height: 70px;
+  /* her zaman yukarıda dursun diyeceğimiz için position:fixed ve top:0 verdik */
+  position: fixed;
+  top: 0;
+  /* sağdan soldan yapışık olmasın diye */
+  padding: 0 30px;
+}
+.navbar a {
+  color: var(--light-color);
+  /* yapışık olmasınlar diye */
+  padding: 10px 20px;
+  margin: 0 5px;
+  /* ilk harfleri büyüttük home = Home */
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.navbar a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+.navbar ul {
+  display: flex;
+}
+.navbar .logo {
+  font-weight: 700;
+}
+/* HEADER */
+.hero {
+  height: 100vh;
+  background: url("../images/home/showcase.jpg") no-repeat center center/cover;
+  position: relative;
+  color: var(--light-color);
+}
+
+.hero .content {
+  /* content içerikleri yanyana geldiler */
+  display: flex;
+  /* alt alta geldiler buton tüm ekranı satır olarak kapladı. */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  /* ilk girişte yazının vurucu olması için pikseli bu boyutta yaptık "your reliable..." */
+  font-size: 55px;
+  font-weight: 500;
+}
+.hero .content p {
+  font-size: 24px;
+  /*çok genişlemesin gerektiğinde yazılar üst üste binebilsin  */
+  max-width: 600px;
+  /* top20 sağı solu sıfır bottom 30px oldu  */
+  margin: 20px 0 30px;
+}
+
+/* heronun öncesine bir şey koyacağı anlamına geliyor. */
+.hero::before {
+  content: ""; /*olmak zorunda "" içine içerik koyabiliriz*/
+  /* yarattığımız content artık yer kaplamayacak çünkü hero yu relative yaptık */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* buraya herhangi bir renk verdiğimizde fixed yaptığımız nav bar dışındaki her yeri o renge çevirir 
+  biz opacity vererek biraz daha cool bir görünüm sağlayacağız */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+  z-index: 10;
+}
+
+.icons {
+  padding: 30px;
+}
+.icons h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.icons i {
+  background: var(--primary-color);
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 15px;
+  color: var(--light-color);
+}
+
+.flex-items img {
+  border-radius: 5%;
+}
+
+/*  Inquery Form */
+.inquery-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.inquery-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.inquery-form .form-control {
+  margin-bottom: 15px;
+}
+.inquery-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5 solid 1px;
+  border-radius: 5px;
+}
+
+.inquery-form input:focus {
+  outline-color: var(--primary-color);
+  caret-color: var(--primary-color);
+}
+
+.inquery-form .btn {
+  padding: 12px 0;
+  margin: 20px 0;
+}
+
+.footer {
+  flex-direction: column;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/*  social */
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.social a {
+  margin: 15px;
+  border-radius: 5px;
+  color: var(--light-color);
+}
+
+.social a:hover {
+  color: var(--primary-color);
+}
+
+/* mobil  */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+    height: 120px;
+  }
+  .navbar a {
+    padding: 10px 20px;
+    margin: 0 15px;
+  }
+
+  .logo {
+    white-space: nowrap;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .cases img {
+    width: 50%;
+    height: 100%;
+    padding: 5px 5px;
+  }
+}

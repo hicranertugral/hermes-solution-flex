@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwsome by cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Hermes Solutions</title>
+  </head>
+  <body>
+    <!-- hero / showcase / landing  gibi isimler verebiliriz -->
+    <header id="home" class="hero">
+      <div class="navbar top" id="navbar">
+        <h1 class="logo" id="logo">
+          <span class="text-primary"
+            ><i class="fa-solid fa-book-open"></i>Hermes</span
+          >Solutions
+        </h1>
+        <nav>
+          <!-- ul>li*5>a#home{home} -->
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#cases">cases</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Your reliaable softwere partner</h1>
+        <p>We provide best softwere solutions</p>
+        <a href="#about" class="btn btn-primary"
+          >Learn More <i class="fa-solid fa-caret-down"></i
+        ></a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ABOUT ICONSzx -->
+      <!-- vh ın altına inecek main -->
+      <!-- section.icons.bg-light#about -->
+      <section class="icons bg-light" id="about">
+        <div class="flex-items">
+          <div>
+            <!-- fa-2x icon u 2 katı büyütmek için yaptık -->
+            <i class="fa-solid fa-code fa-2x"></i>
+            <div>
+              <h3>Web Development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam, maxime? Adipisci asperiores at corrupti, vero
+                voluptate velit corporis dolorum, animi eaque eveniet tenetur
+                cum, sequi obcaecati maxime explicabo accusantium minus?
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <!-- fa-2x icon u 2 katı büyütmek için yaptık -->
+            <i class="fa-solid fa-mobile fa-2x"></i>
+            <div>
+              <h3>Mobile App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam, maxime? Adipisci asperiores at corrupti, vero
+                voluptate velit corporis dolorum, animi eaque eveniet tenetur
+                cum, sequi obcaecati maxime explicabo accusantium minus?
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <!-- fa-2x icon u 2 katı büyütmek için yaptık -->
+            <i class="fa-solid fa-server fa-2x"></i>
+            <div>
+              <h3>Backend Development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam, maxime? Adipisci asperiores at corrupti, vero
+                voluptate velit corporis dolorum, animi eaque eveniet tenetur
+                cum, sequi obcaecati maxime explicabo accusantium minus?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solutions -->
+      <section id="solutions" class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/home/people.jpg" alt="People in suits" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h4>We code what you need</h4>
+              <h2>we provide the latest tech</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aliquam, accusamus optio at et unde provident vero cupiditate
+                eligendi totam. Quis saepe nostrum quam quas ab aliquam eveniet
+                repellat doloribus aperiam natus? Accusamus, quos. Esse eius,
+                nam exercitationem nemo ab, sed nesciunt molestiae corporis
+                nulla possimus architecto soluta harum minima nostrum rerum?
+                Porro autem, dolores ex exercitationem possimus beatae!
+                Praesentium, unde.
+              </p>
+              <a href="" class="btn btn-outline"
+                >Learn More<i class="fa-solid fa-caret-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cases -->
+      <!-- section.cases.flex-grid.section-padding#cases -->
+      <section class="cases flex-grid section-padding" id="cases">
+        <header class="section-header">
+          <h4>This is how we code</h4>
+          <h2>Our Business Cases</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+            ullam.
+          </p>
+        </header>
+        <div class="row">
+          <!-- .column*4>img[src="images/cases/cases$.jpg"]*2 -->
+          <div class="column">
+            <img src="images/cases/cases1.jpg" alt="" /><img
+              src="images/cases/cases2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="column">
+            <img src="images/cases/cases3.jpg" alt="" /><img
+              src="images/cases/cases4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="column">
+            <img src="images/cases/cases5.jpg" alt="" /><img
+              src="images/cases/cases6.jpg"
+              alt=""
+            />
+          </div>
+          <div class="column">
+            <img src="images/cases/cases7.jpg" alt="" /><img
+              src="images/cases/cases8.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section id="blog" class="blog flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/home/blog.jpg" alt="blog" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-secondry">
+              <h4>Blog#1</h4>
+              <h2>we provide the latest tech</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aliquam, accusamus optio at et unde provident vero cupiditate
+                eligendi totam. Quis saepe nostrum quam quas ab aliquam eveniet
+                repellat doloribus aperiam natus? Accusamus, quos. Esse eius,
+                nam exercitationem nemo ab, sed nesciunt molestiae corporis
+                nulla possimus architecto soluta harum minima nostrum rerum?
+                Porro autem, dolores ex exercitationem possimus beatae!
+                Praesentium, unde.
+              </p>
+              <a href="#blog" class="btn btn-outline"
+                >Learn More<i class="fa-solid fa-caret-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section id="team" class="team section-padding">
+        <header class="section-header">
+          <h4>Who we are</h4>
+          <h2>Our Proffesional Team</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi,
+            dicta.
+          </p>
+        </header>
+        <!-- .flex-items>div*3>img[src="images/team/person$.jpg"]+h4{John Deo}+p{Presedent} -->
+        <div class="flex-items">
+          <div>
+            <img src="images/team/person1.jpg" alt="" />
+            <h4>John Deo</h4>
+            <p>Presedent</p>
+          </div>
+          <div>
+            <img src="images/team/person2.jpg" alt="" />
+            <h4>Jane Deo</h4>
+            <p>Vice Presedent</p>
+          </div>
+          <div>
+            <img src="images/team/person3.jpg" alt="" />
+            <h4>Richard Roe</h4>
+            <p>CTO</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="id" class="contact flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/home/contact.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>Inquire a call</h2>
+              <form action="" class="inquery-form">
+                <div class="form-control">
+                  <label for="name"></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter name"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="name"></label>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="name"></label>
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="Enter text"
+                  />
+                </div>
+                <input
+                  type="submit"
+                  value="Send"
+                  id="submit"
+                  class="btn btn-dark"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer btn-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      </div>
+      <p>© Copyright 2020 EdgeLedger</p>
+    </footer>
+  </body>
+</html>
